@@ -1,6 +1,7 @@
 Generative AI
 
- ** Gen AI**:Generative AI is an AI system that generates new content like text, images, or code based on patterns learned from existing data
+ **Gen AI**
+ Generative AI is an AI system that generates new content like text, images, or code based on patterns learned from existing data
 
  **Intelligence** :Intelligence is the ability to learn, understand, think, solve problems, and adapt to new situations.
 
