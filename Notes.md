@@ -48,6 +48,35 @@ Ex: i am varma  here tokens are [i , am , varma]
 
 Transformers can process an entire sentence in one go instead of reading words one by one, because they use self-attention to look at all tokens simultaneously.
 
+**Parallelsim**
 
+Performing computation at simultaneoulsy rather sequentially ( reading a sentence at one go rather reading word by word)
+
+**Day_3**(09/1/26)
+
+
+**Embeddings**
+
+embeddings are dense numeric vectors that represent text (words, sentences, documents) or other data (images, audio) in a format that computers can reason about. Think of them as points in a high-dimensional space where similar content is closer together.
+
+Embeddings  are the GPS coordinates oof a word
+
+**Dimensions**
+
+When text is converted into an embedding, it becomes a vector of numbers.
+
+Each number = one dimension.
+
+So,
+
+128-dim embedding → 128 numbers
+
+384-dim embedding → 384 numbers
+
+768-dim embedding → 768 numbers
+
+1536-dim embedding → 1536 numbers
+
+1.which model use 
           
         
