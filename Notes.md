@@ -67,6 +67,15 @@ When text is converted into an embedding, it becomes a vector of numbers.
 
 Each number = one dimension.
 
+[0.12, -0.44, 0.89, 0.01, ...]  ← each value is one dimension
+
+Text → 384 to 3072
+Voice → 192 to 512
+Image → 512 to 1024
+
+
+
+
 So,
 
 128-dim embedding → 128 numbers
@@ -77,6 +86,6 @@ So,
 
 1536-dim embedding → 1536 numbers
 
-1.which model use 
+
           
         
