@@ -51,7 +51,7 @@ Transformers can process an entire sentence in one go instead of reading words o
 
 **Parallelsim**
 
-Performing computation at simultaneoulsy rather sequentially ( reading a sentence at one go rather reading word by word)
+Parallelism means performing multiple computations at the same time instead of one after another.
 
 **Day_3**(09/1/26)
 
@@ -60,7 +60,7 @@ Performing computation at simultaneoulsy rather sequentially ( reading a sentenc
 
 embeddings are dense numeric vectors that represent text (words, sentences, documents) or other data (images, audio) in a format that computers can reason about. Think of them as points in a high-dimensional space where similar content is closer together.
 
-Embeddings  are the GPS coordinates of a word
+Embeddings  are the GPS coordinates of a word.
 
 **Dimensions**
 
