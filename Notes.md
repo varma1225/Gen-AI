@@ -88,5 +88,15 @@ So,
 1536-dim embedding → 1536 numbers
 
 
-          
+
+**Vector**:numerical representation of data + its meaning 
+
+**Vector DataBase**
+
+A vector database is a database designed to store, manage, and search vectors (embeddings) instead of normal text or numbers.
+
+1.why we use only vector data base to store embeddings 
+
+We use vector databases to store embeddings because they are optimized for high-dimensional vectors and allow fast semantic similarity search, which normal databases cannot efficiently support.
+ 
         
