@@ -196,17 +196,7 @@ We use vector databases because:
 
 RAG is a technique where AI retrieves relevant data from your own documents and then generates accurate answers using that data.
 
-User Question
-      ↓
-Convert to Embedding
-      ↓
-Search Vector Database
-      ↓
-Retrieve Relevant Chunks
-      ↓
-Send Chunks to LLM
-      ↓
-Final Answer
+User Question → Convert to Embedding → Search Vector Database → Retrieve Relevant Chunks → Send Chunks to LLM → Final Answer
 
 
 
