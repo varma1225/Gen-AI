@@ -120,8 +120,8 @@ Embeddings are dense numerical vectors that represent text, images, audio, or vi
 
 They capture **semantic meaning**.
 
-👉 Similar content → closer vectors
-👉 Different content → far vectors
+ Similar content → closer vectors 
+ Different content → far vectors
 
 ### Simple meaning:
 
