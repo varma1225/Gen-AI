@@ -1,102 +1,196 @@
-**Generative AI**
-
- **Gen AI**
- 
- Generative AI is an AI system that generates new content like text, images, or code based on patterns learned from existing data
-
- **Intelligence** :Intelligence is the ability to learn, understand, think, solve problems, and adapt to new situations.
-
- **Artifical Intelligence**:Artificial Intelligence is the ability of machines to perform tasks that normally require human intelligence such as learning, reasoning, problem-solving, and decision-making.
 
 
-**Machine Learning (ML)**
+# Generative AI  Notes
 
-Machine Learning is a subset of AI where machines learn patterns from data instead of being explicitly programmed.
+## Generative AI (Gen AI)
 
-Types of ML
+Generative AI is an AI system that can **generate new content** such as text, images, audio, video, or code based on patterns learned from existing data.
 
-1.Supervised Learning – Labeled data (Classification, Regression)
+Example:
 
-2.Unsupervised Learning – Unlabeled data (Clustering, Dimensionality Reduction)
+* ChatGPT → text
+* DALL·E → images
+* Copilot → code
 
-3.Reinforcement Learning – Learning through rewards and penalties
+---
 
-**Deep Learning (DL)**
+## Intelligence
 
-Deep Learning is a subset of Machine Learning that uses multi-layer neural networks to learn complex patterns from large data.
+Intelligence is the ability to:
 
-Used in:Image recognition,Speech recognition,Natural language processing
+* Learn
+* Understand
+* Think
+* Solve problems
+* Adapt to new situations
 
-**NEURAL NETWORKS**
+---
 
-A Neural Network is a machine learning model inspired by the human brain that learns patterns from data using interconnected layers of artificial neurons.
-🔹 Structure of a Neural Network
+## Artificial Intelligence (AI)
 
-      1.Input Layer – Receives data
+Artificial Intelligence is the ability of machines to perform tasks that normally require human intelligence such as:
 
-      2.Hidden Layer(s) – Learns patterns
+* Learning
+* Reasoning
+* Problem-solving
+* Decision-making
 
-      3.Output Layer – Gives final result
-      
+---
 
-**Tokens**
+## Machine Learning (ML)
 
-A token is the smallest unit of text that an AI model processes
+Machine Learning is a subset of AI where machines **learn from data instead of being explicitly programmed**.
 
-Ex: i am varma  here tokens are [i , am , varma]
+### Types of Machine Learning
 
-**Transformers**
+1. **Supervised Learning**
+   Uses labeled data
+   → Classification, Regression
 
-Transformers can process an entire sentence in one go instead of reading words one by one, because they use self-attention to look at all tokens simultaneously.
+2. **Unsupervised Learning**
+   Uses unlabeled data
+   → Clustering, Dimensionality Reduction
 
-**Parallelsim**
+3. **Reinforcement Learning**
+   Learns using rewards and penalties
+
+---
+
+## Deep Learning (DL)
+
+Deep Learning is a subset of Machine Learning that uses **multi-layer neural networks** to learn complex patterns from large amounts of data.
+
+### Used in:
+
+* Image recognition
+* Speech recognition
+* Natural Language Processing
+
+---
+
+## Neural Networks
+
+A Neural Network is a machine learning model inspired by the human brain that learns patterns using interconnected artificial neurons.
+
+### Structure
+
+1. Input Layer – Receives data
+2. Hidden Layer(s) – Learns patterns
+3. Output Layer – Produces result
+
+---
+
+## Tokens
+
+A token is the smallest unit of text processed by an AI model.
+
+Example:
+
+Sentence:
+`I am Varma`
+
+Tokens:
+`[I, am, Varma]`
+
+(Real tokenization may differ slightly based on tokenizer.)
+
+---
+
+## Transformers
+
+Transformers are neural network models that process all tokens in a sentence **in parallel** using a mechanism called **self-attention**.
+
+They do NOT read word by word sequentially like RNNs.
+
+---
+
+## Parallelism
 
 Parallelism means performing multiple computations at the same time instead of one after another.
 
-**Day_3**(09/1/26)
+Transformers use parallelism to achieve high speed.
 
+---
 
-**Embeddings**
+# Day 3 – Embeddings
 
-embeddings are dense numeric vectors that represent text (words, sentences, documents) or other data (images, audio) in a format that computers can reason about. Think of them as points in a high-dimensional space where similar content is closer together.
+## Embeddings
 
-Embeddings  are the GPS coordinates of a word.
+Embeddings are dense numerical vectors that represent text, images, audio, or video in a form that machines can understand.
 
-**Dimensions**
+They capture **semantic meaning**.
 
-When text is converted into an embedding, it becomes a vector of numbers.
+👉 Similar content → closer vectors
+👉 Different content → far vectors
+
+### Simple meaning:
+
+> Embeddings are GPS coordinates of data in AI space.
+
+---
+
+## Dimensions
+
+When text is converted into embeddings, it becomes a vector of numbers.
 
 Each number = one dimension.
 
-[0.12, -0.44, 0.89, 0.01, ...]  ← each value is one dimension
+Example:
 
-Text → 384 to 3072
-Voice → 192 to 512
-Image → 512 to 1024
+```
+[0.12, -0.44, 0.89, 0.01, ...]
+```
+
+Each value is one dimension.
+
+### Typical dimensions
+
+| Data Type | Dimensions |
+| --------- | ---------- |
+| Text      | 384 – 3072 |
+| Voice     | 192 – 512  |
+| Image     | 512 – 1024 |
+
+Examples:
+
+* 128-dim → 128 numbers
+* 384-dim → 384 numbers
+* 768-dim → 768 numbers
+* 1536-dim → 1536 numbers
+
+---
+
+## Vector
+
+A vector is a numerical representation of data **along with its meaning**.
+
+---
+
+## Vector Database
+
+A Vector Database is a database designed to store, manage, and search vectors (embeddings).
+
+It supports **semantic similarity search**.
+
+Examples:
+
+* FAISS
+* Chroma
+* Pinecone
+* Weaviate
+
+---
+
+## Why we use Vector Databases for Embeddings
+
+We use vector databases because:
+
+* Embeddings are high-dimensional vectors
+* Normal databases cannot efficiently search similarity
+* Vector DB uses ANN (Approximate Nearest Neighbor) algorithms
+* Enables fast semantic search
+* Essential for RAG systems
+
+---
 
 
-
-
-So,
-
-128-dim embedding → 128 numbers
-
-384-dim embedding → 384 numbers
-
-768-dim embedding → 768 numbers
-
-1536-dim embedding → 1536 numbers
-
-
-
-**Vector**:numerical representation of data + its meaning 
-
-**Vector DataBase**
-
-A vector database is a database designed to store, manage, and search vectors (embeddings) instead of normal text or numbers.
-
-1.why we use only vector data base to store embeddings 
-
-We use vector databases to store embeddings because they are optimized for high-dimensional vectors and allow fast semantic similarity search, which normal databases cannot efficiently support.
- 
-        
