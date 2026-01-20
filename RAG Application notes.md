@@ -33,7 +33,7 @@ User Question → Convert to Embedding → MongoDB Vector Search → Retrieve To
 
 ---
 
-##  3_answer_generation.py
+##  3 answer_generation.py
 
 ### Purpose: 
 
@@ -57,7 +57,7 @@ Retrieved Chunks → Prompt → LLM → Final Answer
 
 ---
 
-## 4_history_aware_generation.py
+## 4 history_aware_generation
 
 ### Purpose: Conversation Memory Support
 
@@ -85,7 +85,7 @@ System understands probation refers to leave policy
 
 ---
 
-##  5_recursive_character_text_splitter.py
+##  5 recursive_character_text_splitter
 
 ### Purpose: Advanced Text Splitting
 
@@ -108,7 +108,7 @@ Uses recursive splitting logic to:
 
 ---
 
-##  6_semantic_chunking.py
+##  6.semantic_chunking
 
 ### Purpose: Meaning-Based Chunking
 
@@ -131,7 +131,7 @@ Paragraph about leave stays together
 
 ---
 
-##  7_agentic_chunking.py
+##  7.agentic_chunking
 
 ### Purpose: AI-Controlled Chunking
 
@@ -154,7 +154,7 @@ Best retrieval accuracy
 
 ---
 
-##  8_multi_modal_rag.ipynb
+##  8.multi_modal_rag.ipynb
 
 ### Purpose: Multi-Modal RAG
 
@@ -181,7 +181,7 @@ Ask questions about:
 
 ---
 
-##  9_retrieval_methods.py
+##  9 retrieval_methods
 
 ### Purpose: Compare Retrieval Techniques
 
@@ -202,7 +202,7 @@ Helps find the best retrieval strategy.
 
 ---
 
-## 10_multi_query_retrieval.py
+## 10 multi_query_retrieval
 
 ### Purpose: Query Expansion
 
@@ -230,7 +230,7 @@ Then retrieval happens for all queries.
 
 ---
 
-## 📊 11_reciprocal_rank_fusion.py
+## 11 reciprocal_rank_fusion.py
 
 ### Purpose: Ranking Optimization
 
@@ -247,7 +247,7 @@ RRF merges them intelligently.
 
 ---
 
-## 🔍 12_hybrid_search.ipynb
+##  12 hybrid_search
 
 ### Purpose: Hybrid Search
 
@@ -270,7 +270,7 @@ Hybrid gives best of both.
 
 ---
 
-# 📌 Final Repository Purpose Line
+# Final Repository Purpose Line
 
 > This repository demonstrates a complete end-to-end RAG system, including ingestion, retrieval validation, advanced chunking strategies, multi-query retrieval, ranking fusion, hybrid search, multi-modal retrieval, and answer generation.
 
