@@ -35,7 +35,7 @@ User Question → Convert to Embedding → MongoDB Vector Search → Retrieve To
 
 ##  3_answer_generation.py
 
-### Purpose: Final Answer Generation
+### Purpose: 
 
 This script takes the retrieved document chunks and sends them to the LLM to generate a grounded answer.
 
