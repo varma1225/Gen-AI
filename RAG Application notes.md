@@ -38,18 +38,9 @@ Retrieve Top Matching Chunks
       ↓
 Display Retrieved Snippets
 
-Great — this looks like a **complete RAG learning / experimentation repository** 🔥
-Below are **clear, simple, README-ready notes for every file** you listed.
-
-You can directly paste these into GitHub or project documentation.
-
 ---
 
-# 📘 RAG Advanced Pipelines – File Notes
-
----
-
-## 🧠 3_answer_generation.py
+##  3_answer_generation.py
 
 ### Purpose: Final Answer Generation
 
@@ -73,7 +64,7 @@ Retrieved Chunks → Prompt → LLM → Final Answer
 
 ---
 
-## 🕘 4_history_aware_generation.py
+## 4_history_aware_generation.py
 
 ### Purpose: Conversation Memory Support
 
@@ -101,7 +92,7 @@ System understands probation refers to leave policy
 
 ---
 
-## ✂️ 5_recursive_character_text_splitter.py
+##  5_recursive_character_text_splitter.py
 
 ### Purpose: Advanced Text Splitting
 
@@ -124,7 +115,7 @@ Uses recursive splitting logic to:
 
 ---
 
-## 🧩 6_semantic_chunking.py
+##  6_semantic_chunking.py
 
 ### Purpose: Meaning-Based Chunking
 
@@ -147,7 +138,7 @@ Paragraph about leave stays together
 
 ---
 
-## 🤖 7_agentic_chunking.py
+##  7_agentic_chunking.py
 
 ### Purpose: AI-Controlled Chunking
 
@@ -170,7 +161,7 @@ Best retrieval accuracy
 
 ---
 
-## 🖼️ 8_multi_modal_rag.ipynb
+##  8_multi_modal_rag.ipynb
 
 ### Purpose: Multi-Modal RAG
 
