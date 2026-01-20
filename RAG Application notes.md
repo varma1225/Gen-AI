@@ -28,15 +28,8 @@ This script verifies whether the vector database can correctly retrieve the most
 It acts as a semantic search validation step before connecting the system to an LLM.
 
 
-User Question
-      ↓
-Convert Question to Embedding
-      ↓
-MongoDB Vector Search
-      ↓
-Retrieve Top Matching Chunks
-      ↓
-Display Retrieved Snippets
+User Question → Convert to Embedding → MongoDB Vector Search → Retrieve Top Matching Chunks → Display Retrieved Snippets
+
 
 ---
 
