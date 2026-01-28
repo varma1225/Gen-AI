@@ -1,3 +1,12 @@
+## Why This Pipeline Is Used and How It Works ##
+
+This pipeline is used to build a Retrieval-Augmented Generation (RAG) knowledge base by converting company documents into searchable vector embeddings stored in MongoDB Atlas.
+Instead of relying only on a language model’s memory, this approach allows applications to retrieve accurate, up-to-date information directly from custom documents such as policies, 
+manuals, or FAQs. The system works by first loading all text files from a local folder, then splitting large documents into smaller overlapping chunks to preserve context. 
+Each chunk is converted into numerical embeddings using a local HuggingFace model, and these vectors are stored in MongoDB Atlas using Vector Search. 
+When a user later asks a question, MongoDB performs semantic similarity search on these embeddings to find the most relevant document chunks,
+which can then be passed to an LLM to generate precise, context-aware answers.
+This approach improves accuracy, reduces hallucinations, and enables scalable enterprise search and chatbot applications.
 # -----------------------------
 # Import MongoDB client to connect to MongoDB Atlas
 # -----------------------------
