@@ -1,4 +1,4 @@
-## Why This Pipeline Is Used and How It Works ##
+## Why This Pipeline Is Used and How It Works
 
 This pipeline is used to build a Retrieval-Augmented Generation (RAG) knowledge base by converting company documents into searchable vector embeddings stored in MongoDB Atlas.
 Instead of relying only on a language model’s memory, this approach allows applications to retrieve accurate, up-to-date information directly from custom documents such as policies, 
