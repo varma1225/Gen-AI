@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        input {
+            margin: 5px;
+            padding: 8px;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Management System</h1>
+
+<div class="box">
+    <h2>Add Student</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="roll" placeholder="Roll No">
+    <input type="text" id="phone" placeholder="Phone">
+    <input type="text" id="class" placeholder="Class">
+    <button onclick="addStudent()">Add</button>
+</div>
+
+<div class="box">
+    <h2>Get Student by Roll</h2>
+    <input type="number" id="getRoll" placeholder="Roll No">
+    <button onclick="getStudent()">Get</button>
+</div>
+
+<div class="box">
+    <h2>Get All Students</h2>
+    <button onclick="getAllStudents()">Fetch</button>
+</div>
+
+<div class="box">
+    <h2>Delete Student</h2>
+    <input type="number" id="deleteRoll" placeholder="Roll No">
+    <button onclick="deleteStudent()">Delete</button>
+</div>
+
+<h2>Response</h2>
+<pre id="output"></pre>
+
+<script>
+
+const BASE_URL = "http://127
+ bvv  .0.0.1:8000";
+
+function showResponse(data) {
+    document.getElementById("output").textContent =
+        JSON.stringify(data, null, 2);
+}
+
+// ------------------ ADD STUDENT ------------------
+async function addStudent() {
+    const student = {
+        name: document.getElementById("name").value,
+        roll_no: parseInt(document.getElementById("roll").value),
+        phone: document.getElementById("phone").value,
+        student_class: document.getElementById("class").value
+    };
+
+    const response = await fetch(`${BASE_URL}/students`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(student)
+    });
+
+    const data = await response.json();
+    showResponse(data);
+}
+
+// ------------------ GET STUDENT ------------------
+async function getStudent() {
+    const roll = document.getElementById("getRoll").value;
+
+    const response = await fetch(`${BASE_URL}/students/${roll}`);
+    const data = await response.json();
+    showResponse(data);
+}
+
+// ------------------ GET ALL STUDENTS ------------------
+async function getAllStudents() {
+    const response = await fetch(`${BASE_URL}/student`);
+    const data = await response.json();
+    showResponse(data);
+}
+
+// ------------------ DELETE STUDENT ------------------
+async function deleteStudent() {
+    const roll = document.getElementById("deleteRoll").value;
+
+    const response = await fetch(`${BASE_URL}/students/${roll}`, {
+        method: "DELETE"
+    });
+
+    const data = await response.json();
+    showResponse(data);
+}
+
+</script>
+
+</body>
+</html>zzz
