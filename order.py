@@ -98,16 +98,3 @@ def get_details_by_number(number):
         }
     else :
         raise HTTPException(status_code=404,detail="record not found")
-    
-@app.put("/get-details/{order_id}")
-def update_order(order_id):
-    record=collection.find_one({"order_id":order_id})
-
-    if record["status"]=="delivered":
-        return {
-            "message":"cannot cancel the order"
-        }
-    else:
-        return {
-            "message":"order cancelled succesfully"
-        }
